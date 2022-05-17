@@ -1,5 +1,5 @@
 * {
-    margin: 1px;
+    margin: 0;
     padding: 0;
     
 }
@@ -13,10 +13,10 @@ body {
     user-select: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     background-color: black;
-    background-image: radial-gradient(rgba(0, 150, 0, 0.75), black 120%);
+    background-image: radial-gradient(rgb(0, 150, 0), black 120%);
     color: rgb(92, 255, 92);
     font: 13px Inconsolata, monospace;
-    text-shadow: 0 0 5px rgb(95, 184, 95);
+    text-shadow: 0 0 3px rgb(0, 255, 13);
 }
 
 body::after {
@@ -24,30 +24,60 @@ body::after {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-image: repeating-linear-gradient(
-      0deg,
-      rgba(black, 0.15),
-      rgba(black, 0.15) 1px,
-      transparent 1px,
-      transparent 2px
-    )!important;
+    width: 300vw;
+    height: 300vh;
+    pointer-events: none;
+    background: repeating-linear-gradient(#00ff0d41, #00000033 1px, #00ff0d33 1px, #3c06ff 1px);
+  }
+hr{
+    border-style: dashed;
+    border-width: 2px;
+    height: 2px;
+    border-color: rgb(92, 255, 92);
+}
+
+p {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .1em solid rgb(0, 255, 34); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .1em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .10s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
   }
 
-.deckfront {}
-
-.deckback {
+.deckback , .deckfront {
+    position:static;
     display: inline-block;
-    box-shadow: 1px 1px 10px 1px rgba(91, 255, 165, 0.308);
+    box-shadow: 0 0 3px rgb(0, 255, 13);
     border-style:solid;
-    border-color: rgb(67, 207, 91);
-    background-image: radial-gradient(rgba(0, 150, 0, 0.308), rgba(255, 255, 255, 0.116) 120%);
+    border-color: rgb(92, 255, 92);
+    background-image: radial-gradient(rgb(0, 150, 0), rgb(0, 0, 0) 120%);
     border-width: 2px;
     border-radius: 15px;
     width: 150px;
     height: 250px;
-    transition: transform 0.2s;
-    transform-origin: center;
-    transform-style: preserve-3d;
+    transition: opacity 1s;
+}
+
+.deckback > *{
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.deckfront > *{
+    opacity: 1;
+    transition: opacity 2s;
+}
+
+.icon{
+    position: fixed;
+    align-self: center;
 }
