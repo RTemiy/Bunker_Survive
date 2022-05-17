@@ -1,7 +1,13 @@
+:root {
+    --cw: 150px;
+    --ch: 250px;
+    --itc: rgb(92, 255, 92);
+}
+
 * {
-    margin: 0;
+    margin: 2px;
     padding: 0;
-    
+    position:initial;
 }
 
 body {
@@ -14,7 +20,7 @@ body {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     background-color: black;
     background-image: radial-gradient(rgb(0, 150, 0), black 120%);
-    color: rgb(92, 255, 92);
+    color: var(--itc);
     font: 13px Inconsolata, monospace;
     text-shadow: 0 0 3px rgb(0, 255, 13);
 }
@@ -28,56 +34,58 @@ body::after {
     height: 300vh;
     pointer-events: none;
     background: repeating-linear-gradient(#00ff0d41, #00000033 1px, #00ff0d33 1px, #3c06ff 1px);
-  }
-hr{
+}
+
+hr {
     border-style: dashed;
     border-width: 2px;
     height: 2px;
-    border-color: rgb(92, 255, 92);
+    border-color: var(--itc);
 }
 
-p {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .1em solid rgb(0, 255, 34); /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .1em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(30, end),
-      blink-caret .10s step-end infinite;
-  }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-
-.deckback , .deckfront {
-    position:static;
-    display: inline-block;
+.deckback,
+.deckfront {
+    position: relative;
+    display: inline-table;
     box-shadow: 0 0 3px rgb(0, 255, 13);
-    border-style:solid;
-    border-color: rgb(92, 255, 92);
+    border-style: solid;
+    border-color: var(--itc);
     background-image: radial-gradient(rgb(0, 150, 0), rgb(0, 0, 0) 120%);
     border-width: 2px;
     border-radius: 15px;
-    width: 150px;
-    height: 250px;
+    width: var(--cw);
+    height: var(--ch);
     transition: opacity 1s;
+    perspective: 1000px;    
 }
 
-.deckback > *{
+.deckback{
+    background-image: radial-gradient(rgb(0, 150, 0), rgba(126, 126, 126, 0.158) 120%);
+}
+
+.deckback>* {
     opacity: 0;
     transition: opacity 2s;
 }
 
-.deckfront > *{
+.deckfront>* {
     opacity: 1;
     transition: opacity 2s;
 }
 
-.icon{
-    position: fixed;
-    align-self: center;
+.title {
+    font-size: 125%;
+    font-weight: bold;
+}
+
+
+.text {}
+
+.icon {
+    position: absolute;
+    left: 0;
+    top: calc(var(--ch)/2);
+    font-size: 150%;
+    width: 5px;
+    color: rgba(255, 255, 255, 0.281);
 }
