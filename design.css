@@ -19,10 +19,11 @@ body {
     user-select: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     background-color: black;
-    background-image: radial-gradient(rgb(0, 150, 0), black 120%);
+    background-image: radial-gradient(rgb(0, 26, 3), black 120%);
     color: var(--itc);
     font: 13px Inconsolata, monospace;
     text-shadow: 0 0 3px rgb(0, 255, 13);
+    opacity: 1;
 }
 
 hr {
@@ -39,7 +40,7 @@ hr {
     box-shadow: 0 0 3px rgb(0, 255, 13);
     border-style: solid;
     border-color: var(--itc);
-    background-image: radial-gradient(rgb(0, 150, 0), rgb(0, 0, 0) 120%);
+    background-image: radial-gradient(rgb(0, 59, 0), rgb(0, 0, 0) 120%);
     border-width: 2px;
     border-radius: 15px;
     width: var(--cw);
@@ -71,10 +72,10 @@ hr {
 .text {}
 
 .icon {
+    text-shadow: 0px 0px 0px rgb(0, 134, 7);
     position: absolute;
-    left: 0;
+    left: calc(var(--cw)/3.5);
     top: calc(var(--ch)/2);
-    font-size: 150%;
-    width: 5px;
-    color: rgba(255, 255, 255, 0.281);
+    font-size: 300%;
+    color: rgba(255, 255, 255, 0);
 }
