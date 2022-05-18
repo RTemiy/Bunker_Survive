@@ -29,8 +29,8 @@ body {
 
 hr {
     border-style: dashed;
-    border-width: 2px;
-    height: 2px;
+    border-width: 0px;
+    height: 0px;
     border-color: var(--itc);
 }
 
@@ -45,8 +45,10 @@ hr {
     border-width: 2px;
     border-radius: 5px;
     width: var(--cw);
+    min-width: var(--cw);
     max-width: var(--cw);
     height: var(--ch);
+    min-height: var(--ch);
     max-height: var(--ch);
     transition: opacity 1s;
     perspective: 1000px;    
@@ -57,13 +59,14 @@ hr {
 }
 
 .deckback>* {
-    opacity: 0;
-    transition: opacity 2s;
+    border-style: none;
+    text-shadow: none;
+    color: rgba(240, 248, 255, 0);
+    transition: color 2s, text-shadow 5s,border-style 2s;
 }
 
 .deckfront>* {
-    opacity: 1;
-    transition: opacity 2s;
+    transition: color 2s,text-shadow 5s,border-style 2s;
 }
 
 .title {
@@ -74,7 +77,7 @@ hr {
 
 .text {
     height: calc(var(--ch)/1.5);
-    width: var(--cw);
+    width: var(--cw)-5%;
 }
 
 .icon {
@@ -85,4 +88,5 @@ hr {
     font-size: 300%;
     font-weight: lighter;
     color: rgba(255, 255, 255, 0);
+    z-index: -1;
 }
