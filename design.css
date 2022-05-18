@@ -1,6 +1,6 @@
 :root {
     --cw: 100px;
-    --ch: 180px;
+    --ch: 150px;
     --itc: rgb(92, 255, 92);
 }
 
@@ -8,6 +8,7 @@
     margin: 2px;
     padding: 0;
     position:initial;
+    overflow: auto;
 }
 
 body {
@@ -69,7 +70,10 @@ hr {
 }
 
 
-.text {}
+.text {
+    height: calc(var(--ch)/1.5);
+    width: var(--cw);
+}
 
 .icon {
     text-shadow: 0px 0px 0px rgba(0, 134, 7, 0.589);

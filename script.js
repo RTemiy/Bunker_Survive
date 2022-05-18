@@ -129,7 +129,47 @@ Pack.Profession.Cards.push(new Card({
 Pack.Profession.Cards.push(new Card({
     title: 'Врач',
     icon: '🧑‍⚕️',
-    text: 'Всех вылечу'
+    text: 'Всех вылечу' 
+}));
+Pack.Profession.Cards.push(new Card({
+    title: 'Программист',
+    icon: '🧑‍💻',
+    text: 'Скажи что-нибудь на программистском'
+}));
+Pack.Profession.Cards.push(new Card({
+    title: 'Повар',
+    icon: '🧑‍🍳',
+    text: 'Повар спрашивает повара'
+}));
+Pack.Profession.Cards.push(new Card({
+    title: 'Детектив',
+    icon: '🕵️',
+    text: 'Так, так, так, что тут у нас'
+}));
+Pack.Profession.Cards.push(new Card({
+    title: 'Химик',
+    icon: '🧑‍🔬',
+    text: 'Похимичим'
+}));
+Pack.Profession.Cards.push(new Card({
+    title: 'Космический инженер',
+    icon: '🧑‍🚀',
+    text: 'Ещё чуть-чуть и прямо в космос'
+}));
+Pack.Profession.Cards.push(new Card({
+    title: 'Робототехник',
+    icon: '🧑‍🔧',
+    text: 'Нет, это не очередной робот пылесос'
+}));
+Pack.Profession.Cards.push(new Card({
+    title: 'Зомболог',
+    icon: '🧑‍⚕️',
+    text: 'Вообще-то они существуют'
+}));
+Pack.Profession.Cards.push(new Card({
+    title: 'Домохозяйка',
+    icon: '🧑‍🍳',
+    text: 'Отчаянная'
 }));
 //Факты
 Pack.Facts = new Deck('Facts');
