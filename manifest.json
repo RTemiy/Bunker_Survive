@@ -5,11 +5,11 @@
       {
         "src": "https://rtemiy.github.io/Bunker_Survive/favicon.png",
         "type": "image/png",
-        "sizes": "144x144"
+        "sizes": "262x262"
       }
     ],
     "start_url": "https://rtemiy.github.io/Bunker_Survive/index.html",
-    "background_color": "gree",
+    "background_color": "green",
     "display": "standalone",
     "scope": "/",
     "theme_color": "green"
