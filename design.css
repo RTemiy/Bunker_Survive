@@ -9,10 +9,10 @@
     padding: 0;    
     box-sizing: border-box;
     max-width: var(--width);
+    overflow:auto;
 }
 
 body {
-    overflow:inherit;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -40,10 +40,10 @@ hr {
     position: relative;
     display: inline-table;
     vertical-align: top;
-    box-shadow: 0px 0px 2px rgb(0, 255, 13);
+    box-shadow: 0px 0px 10px 0px rgba(0, 255, 13, 0.514);
     border-style: solid;
     border-color: var(--itc);
-    border: 0px;
+    border-width: 2px;
     background-image: radial-gradient(rgb(0, 59, 0), rgb(0, 0, 0) 120%);
     border-width: 2px;
     border-radius: 5px;
@@ -62,6 +62,7 @@ hr {
 }
 
 .deckback>* {
+    overflow:hidden;
     border-style: none;
     text-shadow: none;
     color: rgba(240, 248, 255, 0);
