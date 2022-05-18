@@ -13,7 +13,6 @@ class Deck {
         this.Cards = [];
         this.element = document.createElement('div');
         this.element.setAttribute('class', 'deckback');
-        this.l1 = document.createElement('hr');
         this.element.onclick = () => { this.Flip() };
         this.Flip = () => {
             if (this.element.getAttribute('class') == 'deckfront') {
@@ -30,7 +29,6 @@ class Deck {
         this.text = document.createElement('p');
         this.text.setAttribute('class', 'text');
         this.element.appendChild(this.title);
-        this.element.appendChild(this.l1);
         this.element.appendChild(this.icon);
         this.element.appendChild(this.text);
         document.body.appendChild(this.element);
