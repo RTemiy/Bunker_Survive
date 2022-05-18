@@ -45,7 +45,9 @@ hr {
     border-width: 2px;
     border-radius: 5px;
     width: var(--cw);
+    max-width: var(--cw);
     height: var(--ch);
+    max-height: var(--ch);
     transition: opacity 1s;
     perspective: 1000px;    
 }
