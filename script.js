@@ -188,6 +188,36 @@ Pack.Facts.Cards.push(new Card({
     icon: '🙆',
     text: 'Я посмотрю'
 }));
+Pack.Facts.Cards.push(new Card({
+    title: 'Амбидекстр',
+    icon: '👐',
+    text: 'С двух рук сразу'
+}));
+Pack.Facts.Cards.push(new Card({
+    title: 'Отсидел в тюрьме  3 года',
+    icon: '🏢',
+    text: 'Золотые купола'
+}));
+Pack.Facts.Cards.push(new Card({
+    title: 'Подрабатывал в садике',
+    icon: '🏆',
+    text: 'Дети— цветы жизни'
+}));
+Pack.Facts.Cards.push(new Card({
+    title: 'Жил в деревне без света',
+    icon: '🌙',
+    text: 'Бывало и хуже'
+}));
+Pack.Facts.Cards.push(new Card({
+    title: 'Забирали инопланетяне',
+    icon: '🪐',
+    text: 'Там был Малдер'
+}));
+Pack.Facts.Cards.push(new Card({
+    title: 'Покусан зомби',
+    icon: '🧟',
+    text: 'Ой, даже не болит'
+}));
 //Хобби
 Pack.Hobby = new Deck('Hobby');
 Pack.Hobby.Cards.push(new Card({
