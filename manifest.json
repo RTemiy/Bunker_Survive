@@ -1,0 +1,17 @@
+{
+    "short_name": "Bunker Survive",
+    "name": "Card game: Bunker Survive",
+    "icons": [
+      {
+        "src": "https://rtemiy.github.io/Bunker_Survive/favicon.png",
+        "type": "image/png",
+        "sizes": "144x144"
+      }
+    ],
+    "start_url": "https://rtemiy.github.io/Bunker_Survive/index.html",
+    "background_color": "gree",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "green"
+}
+    
