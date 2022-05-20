@@ -209,6 +209,11 @@ Pack.Profession.Cards.push(new Card({
     icon: '🧑‍🍳',
     text: 'Отчаянная'
 }));
+Pack.Profession.Cards.push(new Card({
+    title: 'Архитектор',
+    icon: '🏆',
+    text: 'Себе я памятник воздвиг'
+}));
 //Факты
 Pack.Facts = new Deck('Facts');
 Pack.Facts.Cards.push(new Card({
@@ -302,6 +307,11 @@ Pack.Hobby.Cards.push(new Card({
     title: 'Зарабатывает на ставках',
     icon: '💲',
     text: 'А кто-то говорит, что это пустые траты'
+}));
+Pack.Hobby.Cards.push(new Card({
+    title: 'Диггер',
+    icon: '🤸',
+    text: 'Однажды я чуть не умер'
 }));
 //Особые условия
 Pack.Conditions = new Deck('Conditions');
