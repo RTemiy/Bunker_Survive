@@ -429,7 +429,7 @@ Pack.Bagage.Cards.push(new Card({
 }));
 Pack.Bagage.Cards.push(new Card({
     title: 'Костюм для подводного плавания',
-    icon: '🪚🏊‍♂️',
+    icon: '🏊‍♂️',
     text: 'Если через 5 минут я не вернусь, то забудьте про меня'
 }));
 Pack.Bagage.Cards.push(new Card({
@@ -588,6 +588,33 @@ Pack.Threat.Cards.push(new Card({
 Pack.Threat.element.onclick = () => {Pack.Threat.SetRnd()};
 Pack.Cataclysm.element.onclick = () => {Pack.Cataclysm.SetRnd()};
 Pack.Bunker.element.onclick = () => {Pack.Bunker.SetRnd()};
+document.write('<hr>');
+document.write('<p onclick="ShowAll()">-> Показать все карты</p>');
+document.write('<hr>');
+
+
+function ShowAll(){
+    for(key in Pack){
+        let b = Pack[key].Cards;
+        for(var x=0;x<b.length;x++){
+        this.element = document.createElement('div');
+        this.element.setAttribute('class', 'deckfront');
+        this.title = document.createElement('p');
+        this.title.setAttribute('class', 'title');
+        this.icon = document.createElement('p');
+        this.icon.setAttribute('class', 'icon');
+        this.text = document.createElement('p');
+        this.text.setAttribute('class', 'text');
+        this.title.innerHTML=Pack[key].Cards[x].title;
+        this.icon.innerHTML=Pack[key].Cards[x].icon;
+        this.text.innerHTML=Pack[key].Cards[x].text;
+        this.element.appendChild(this.title);
+        this.element.appendChild(this.icon);
+        this.element.appendChild(this.text);
+        document.body.appendChild(this.element);
+        }
+    }
+}
 
 function Main() {
     Pack.Conditions.SetRnd();
