@@ -34,16 +34,16 @@ class Deck {
         this.element.appendChild(this.icon);
         this.element.appendChild(this.text);
         this.element.appendChild(this.tip);
-        this.tip.innerHTML=this.category;
+        this.tip.innerHTML = this.category;
         document.body.appendChild(this.element);
         this.SetRnd = () => {
             let r = Math.floor(Math.random() * this.Cards.length);
             if (this.Cards[r].selected == true) {
-                console.log("Карта `"+this.Cards[r].title+'` было')
+                console.log("Карта `" + this.Cards[r].title + '` было')
                 this.SetRnd();
             }
             else if (this.Cards[r].selected == false) {
-                console.log("Карта `"+this.Cards[r].title+'` не было')
+                console.log("Карта `" + this.Cards[r].title + '` не было')
                 this.title.innerHTML = this.Cards[r].title;
                 this.icon.innerHTML = this.Cards[r].icon;
                 this.text.innerHTML = this.Cards[r].text;
@@ -57,12 +57,29 @@ class Deck {
 
 
 var Pack = {};
-//Биология
+
 Pack.Biology = new Deck('Биология');
+Pack.Health = new Deck('Здоровье');
+Pack.Profession = new Deck('Профессия');
+Pack.Facts = new Deck('Факт');
+Pack.Hobby = new Deck('Хобби');
+Pack.Phobias = new Deck('Фобия');
+Pack.Bagage = new Deck('Багаж');
+Pack.Perks = new Deck('Перк')
+
+document.write('<hr>');
+document.write('<p>||| Терминал событий бункера<p>');
+document.write('<hr>');
+
+Pack.Cataclysm = new Deck('Катастрофа');
+Pack.Bunker = new Deck('Бункер');
+Pack.Threat = new Deck('Угроза');
+
+//БИОЛОГИЯ
 Pack.Biology.Cards.push(new Card({
     title: 'Мужчина',
     icon: '👨🏻',
-    text: 'Мужчина 30 лет'
+    text: 'Мужчина 30 лет',
 }));
 Pack.Biology.Cards.push(new Card({
     title: 'Женщина',
@@ -119,8 +136,23 @@ Pack.Biology.Cards.push(new Card({
     icon: '🧞‍♂️',
     text: 'Можешь принять любой облик'
 }));
-//Здоровье
-Pack.Health = new Deck('Здоровье');
+Pack.Biology.Cards.push(new Card({
+    title: 'Андрогин',
+    icon: '🧑‍🦳',
+    text: 'А какого я пола? 25 лет'
+}));
+Pack.Biology.Cards.push(new Card({
+    title: 'Котгендер',
+    icon: '🐈',
+    text: 'Муррр...'
+}));
+Pack.Biology.Cards.push(new Card({
+    title: 'Зомби',
+    icon: '🧟',
+    text: 'А лекарство уже изобрели?'
+}));
+
+//ЗДОРОВЬЕ
 Pack.Health.Cards.push(new Card({
     title: 'Слепой',
     icon: '🧑‍🦯',
@@ -282,8 +314,8 @@ Pack.Health.Cards.push(new Card({
     icon: '💔',
     text: 'Я тоже чайлдфри'
 }));
-//Профессия
-Pack.Profession = new Deck('Профессия');
+
+//ПРОФЕССИЯ
 Pack.Profession.Cards.push(new Card({
     title: 'Шахтер',
     icon: '⛏',
@@ -307,7 +339,7 @@ Pack.Profession.Cards.push(new Card({
 Pack.Profession.Cards.push(new Card({
     title: 'Врач',
     icon: '🧑‍⚕️',
-    text: 'Всех вылечу' 
+    text: 'Всех вылечу'
 }));
 Pack.Profession.Cards.push(new Card({
     title: 'Программист',
@@ -429,8 +461,8 @@ Pack.Profession.Cards.push(new Card({
     icon: '💥',
     text: 'Сварю (не суп)'
 }));
-//Факты
-Pack.Facts = new Deck('Факт');
+
+//ФАКТЫ
 Pack.Facts.Cards.push(new Card({
     title: 'Знает президента',
     icon: '🗣',
@@ -546,8 +578,8 @@ Pack.Facts.Cards.push(new Card({
     icon: '🫁',
     text: 'Правда с рыбами не умею общаться'
 }));
-//Хобби
-Pack.Hobby = new Deck('Хобби');
+
+//ХОББИ
 Pack.Hobby.Cards.push(new Card({
     title: 'Мыловарение',
     icon: '💫',
@@ -668,75 +700,90 @@ Pack.Hobby.Cards.push(new Card({
     icon: '🏕',
     text: 'Бэар Гриллс— фейк'
 }));
-//Особые условия
-Pack.Conditions = new Deck('Особое условие');
-Pack.Conditions.Cards.push(new Card({
-    title: 'Один за всех и все против одного',
-    icon: '⭐️',
-    text: 'Твой голос решает кого выгнать в этом раунде!'
-}));
-Pack.Conditions.Cards.push(new Card({
-    title: 'Услышь мои молитвы',
-    icon: '🙌',
-    text: 'В этом раунде никого не изгоняют'
-}));
-Pack.Conditions.Cards.push(new Card({
-    title: 'Вор в законе',
-    icon: '👋',
-    text: 'Когда тебя изгнали, укради одну любую карту у другого игрока'
-}));
-Pack.Conditions.Cards.push(new Card({
-    title: 'Звонок президенту',
-    icon: '📞',
-    text: 'Все голоса удваиваются в этом раунде'
-}));
-Pack.Conditions.Cards.push(new Card({
-    title: 'Заложи предателя',
-    icon: '👣',
-    text: 'Если тебя изгнали, то оставшиеся выжившие получают +1 угрозу'
-}));
-Pack.Conditions.Cards.push(new Card({
-    title: 'Мы все равны',
-    icon: '👆',
-    text: 'У всех выживших становится такое же хобби, как у тебя'
-}));
-Pack.Conditions.Cards.push(new Card({
-    title: 'Старикам тут не место',
-    icon: '🤐',
-    text: 'Все кто старше тебя не могут голосовать в этом раунде'
-}));
-Pack.Conditions.Cards.push(new Card({
+
+//ФОБИИ
+Pack.Phobias.Cards.push(new Card({
     title: 'Филофобия',
     icon: '💔',
     text: 'Ты должен голосовать против игрока, который проголосовал против человека слева или справа от тебя'
 }));
-Pack.Conditions.Cards.push(new Card({
+Pack.Phobias.Cards.push(new Card({
     title: 'Нарцисс',
     icon: '❣️',
     text: 'Ты должен голосовать против игрока слева или справа от себя, если против него проголосовал хотя бы один человек'
 }));
-Pack.Conditions.Cards.push(new Card({
+Pack.Phobias.Cards.push(new Card({
     title: 'Стокгольмский синдром',
     icon: '💘',
     text: 'Ты должен голосовать против игрока, которому не хватает одного голоса до изгнания'
 }));
-Pack.Conditions.Cards.push(new Card({
+Pack.Phobias.Cards.push(new Card({
     title: 'Гелотофобия',
     icon: '💢',
     text: 'Ты должен голосовать против игрока, который первым проголосовал против тебя'
 }));
-Pack.Conditions.Cards.push(new Card({
+Pack.Phobias.Cards.push(new Card({
     title: 'Гомофобия',
     icon: '💢',
     text: 'Ты должен голосовать против игроков с нетрадиционной ориентацией'
 }));
-Pack.Conditions.Cards.push(new Card({
+Pack.Phobias.Cards.push(new Card({
     title: 'Геронтофобия',
     icon: '💢',
     text: 'Ты должен голосовать против игроков, которые старше тебя'
 }));
-//Багаж
-Pack.Bagage = new Deck('Багаж');
+Pack.Phobias.Cards.push(new Card({
+    title: 'Номофобия',
+    icon: '🔇',
+    text: 'Только не отбирайте у меня телефон!'
+}));
+Pack.Phobias.Cards.push(new Card({
+    title: 'Эротофобия',
+    icon: '🚫',
+    text: 'Меня принёс аист!'
+}));
+Pack.Phobias.Cards.push(new Card({
+    title: 'Трипанофобия',
+    icon: '💉',
+    text: 'Боязнь игл и уколов'
+}));
+Pack.Phobias.Cards.push(new Card({
+    title: 'Некрофобия',
+    icon: '⚰️',
+    text: 'Я не был даже на бабушкиных похоронах...'
+}));
+Pack.Phobias.Cards.push(new Card({
+    title: 'Робофобия',
+    icon: '🤖',
+    text: 'А если будет как в "Терминаторе"? Также должен голосовать против андроидов'
+}));
+Pack.Phobias.Cards.push(new Card({
+    title: 'Хемофобия',
+    icon: '🧪',
+    text: 'Вы точно ничем не обрабатывали мою посуду?'
+}));
+Pack.Phobias.Cards.push(new Card({
+    title: 'Хронофобия',
+    icon: '⏰',
+    text: 'Мне долго придётся ждать?'
+}));
+Pack.Phobias.Cards.push(new Card({
+    title: 'Топофобия',
+    icon: '👤',
+    text: 'Не оставляйте меня одного!'
+}));
+Pack.Phobias.Cards.push(new Card({
+    title: 'Мусофобия',
+    icon: '🐀',
+    text: 'Как можно любить этих мерзких грызунов?!'
+}));
+Pack.Phobias.Cards.push(new Card({
+    title: 'Уфофобия',
+    icon: '👽',
+    text: 'Надеюсь меня не заберут жить на другую планету? Должен голосовать против инопланетян'
+}));
+
+//БАГАЖ
 Pack.Bagage.Cards.push(new Card({
     title: 'Снайперская винтовка',
     icon: '🏹',
@@ -878,12 +925,84 @@ Pack.Bagage.Cards.push(new Card({
     text: ''
 }));
 
-document.write('<hr>');
-document.write('<p>||| Терминал событий бункера<p>');
-document.write('<hr>');
+//ПЕРКИ
+Pack.Perks.Cards.push(new Card({
+    title: 'Один за всех и все против одного',
+    icon: '⭐️',
+    text: 'Твой голос решает кого выгнать в этом раунде!'
+}));
+Pack.Perks.Cards.push(new Card({
+    title: 'Услышь мои молитвы',
+    icon: '🙌',
+    text: 'В этом раунде никого не изгоняют'
+}));
+Pack.Perks.Cards.push(new Card({
+    title: 'Вор в законе',
+    icon: '👋',
+    text: 'Когда тебя изгнали, укради одну любую карту у другого игрока'
+}));
+Pack.Perks.Cards.push(new Card({
+    title: 'Звонок президенту',
+    icon: '📞',
+    text: 'Все голоса удваиваются в этом раунде'
+}));
+Pack.Perks.Cards.push(new Card({
+    title: 'Заложи предателя',
+    icon: '👣',
+    text: 'Если тебя изгнали, то оставшиеся выжившие получают +1 угрозу'
+}));
+Pack.Perks.Cards.push(new Card({
+    title: 'Мы все равны',
+    icon: '👆',
+    text: 'У всех выживших становится такое же хобби, как у тебя'
+}));
+Pack.Perks.Cards.push(new Card({
+    title: 'Старикам тут не место',
+    icon: '🤐',
+    text: 'Все кто старше тебя не могут голосовать в этом раунде'
+}));
+Pack.Perks.Cards.push(new Card({
+    title: 'Пропуск в бункер',
+    icon: '🔖',
+    text: 'Можешь отменить своё изгнание'
+}));
+Pack.Perks.Cards.push(new Card({
+    title: 'Не лезь вперёд батьки в пекло',
+    icon: '✋',
+    text: 'Все кто младше тебя не могут голосовать в этом раунде'
+}));
+Pack.Perks.Cards.push(new Card({
+    title: 'Шар для гадания',
+    icon: '🔮',
+    text: 'Всё что было сыграно, возвращается в изначальное положение игра начинается заного с теми же картами'
+}));
+Pack.Perks.Cards.push(new Card({
+    title: 'Взять в заложники',
+    icon: '🔫',
+    text: 'Выгони другого игрока, если тебя изгнали и останься в бункере'
+}));
+Pack.Perks.Cards.push(new Card({
+    title: 'Ключ от комнаты в бункере',
+    icon: '🔑',
+    text: 'Откройте дополнительную карту бункера'
+}));
+Pack.Perks.Cards.push(new Card({
+    title: 'Параллельная вселенная',
+    icon: '🔙',
+    text: 'Перевытаскивайте карту катастрофы'
+}));
+Pack.Perks.Cards.push(new Card({
+    title: 'Переработка',
+    icon: '♻️',
+    text: 'В этом раунде все открывают карту багажа'
+}));
+Pack.Perks.Cards.push(new Card({
+    title: 'Фейсконтроль',
+    icon: '⭕️',
+    text: 'В этом раунде все открывают карту биологии'
+}));
 
-//Бункер
-Pack.Bunker = new Deck('Бункер');
+//БУНКЕР
 Pack.Bunker.Cards.push(new Card({
     title: 'Хим Лаборатория',
     icon: '🧪',
@@ -969,8 +1088,7 @@ Pack.Bunker.Cards.push(new Card({
     icon: '🧬',
     text: 'В нужных руках она станет нашим лучшим выходом из этой ситуации'
 }));
-//Катаклизм
-Pack.Cataclysm = new Deck('Катастрофа');
+//КАТАКЛИЗМ
 Pack.Cataclysm.Cards.push(new Card({
     title: 'Атомная зима',
     icon: '💣',
@@ -1036,8 +1154,7 @@ Pack.Cataclysm.Cards.push(new Card({
     icon: '🦂',
     text: 'Последнее десятилетие учёные всех стран упорно экспериментировали над генами животных, что к привело к их утечке, в мире стали появляться огромные виды животных, которые уничтожали всё на своём пути.Выжившим нужно приспособиться к новым условиям и восстановить цивилизацию!'
 }));
-//Угроза
-Pack.Threat = new Deck('Угроза');
+//УГРОЗА
 Pack.Threat.Cards.push(new Card({
     title: 'Крысы',
     icon: '🐀',
@@ -1100,43 +1217,43 @@ Pack.Threat.Cards.push(new Card({
 }));
 
 
-Pack.Threat.element.onclick = () => {Pack.Threat.SetRnd()};
-Pack.Cataclysm.element.onclick = () => {Pack.Cataclysm.SetRnd()};
-Pack.Bunker.element.onclick = () => {Pack.Bunker.SetRnd()};
+Pack.Threat.element.onclick = () => { Pack.Threat.SetRnd() };
+Pack.Cataclysm.element.onclick = () => { Pack.Cataclysm.SetRnd() };
+Pack.Bunker.element.onclick = () => { Pack.Bunker.SetRnd() };
 document.write('<hr>');
 document.write('<p onclick="ShowAll()">-> Показать все карты</p>');
-document.write('<hr>');
 
 
-function ShowAll(){
-    for(key in Pack){
+function ShowAll() {
+    for (key in Pack) {
         let b = Pack[key].Cards;
-        for(var x=0;x<b.length;x++){
-        this.element = document.createElement('div');
-        this.element.setAttribute('class', 'deckfront');
-        this.title = document.createElement('p');
-        this.title.setAttribute('class', 'title');
-        this.icon = document.createElement('p');
-        this.icon.setAttribute('class', 'icon');
-        this.text = document.createElement('p');
-        this.text.setAttribute('class', 'text');
-        this.tip = document.createElement('p');
-        this.tip.setAttribute('class', 'tip');
-        this.title.innerHTML=Pack[key].Cards[x].title;
-        this.icon.innerHTML=Pack[key].Cards[x].icon;
-        this.text.innerHTML=Pack[key].Cards[x].text;        
-        this.tip.innerHTML=Pack[key].category;        
-        this.element.appendChild(this.title);
-        this.element.appendChild(this.icon);
-        this.element.appendChild(this.text);
-        this.element.appendChild(this.tip);
-        document.body.appendChild(this.element);
+        for (var x = 0; x < b.length; x++) {
+            this.element = document.createElement('div');
+            this.element.setAttribute('class', 'deckfront');
+            this.title = document.createElement('p');
+            this.title.setAttribute('class', 'title');
+            this.icon = document.createElement('p');
+            this.icon.setAttribute('class', 'icon');
+            this.text = document.createElement('p');
+            this.text.setAttribute('class', 'text');
+            this.tip = document.createElement('p');
+            this.tip.setAttribute('class', 'tip');
+            this.title.innerHTML = Pack[key].Cards[x].title;
+            this.icon.innerHTML = Pack[key].Cards[x].icon;
+            this.text.innerHTML = Pack[key].Cards[x].text;
+            this.tip.innerHTML = Pack[key].category;
+            this.element.appendChild(this.title);
+            this.element.appendChild(this.icon);
+            this.element.appendChild(this.text);
+            this.element.appendChild(this.tip);
+            document.body.appendChild(this.element);
         }
     }
 }
 
 function Main() {
-    Pack.Conditions.SetRnd();
+    Pack.Phobias.SetRnd();
+    Pack.Perks.SetRnd();
     Pack.Biology.SetRnd();
     Pack.Facts.SetRnd();
     Pack.Health.SetRnd();
