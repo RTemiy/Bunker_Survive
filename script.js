@@ -78,7 +78,7 @@ Pack.Biology.Cards.push(new Card({
 Pack.Biology.Cards.push(new Card({
     title: 'Древняя бабка',
     icon: '👵',
-    text: '100 лет...'
+    text: '100 лет... От меня сбежал колобок'
 }));
 Pack.Biology.Cards.push(new Card({
     title: 'Древний дед',
@@ -93,7 +93,7 @@ Pack.Biology.Cards.push(new Card({
 Pack.Biology.Cards.push(new Card({
     title: 'Инопланетянин',
     icon: '👽',
-    text: ''
+    text: 'Ай вонт ту билив'
 }));
 Pack.Biology.Cards.push(new Card({
     title: 'Гей 20 лет',
@@ -130,7 +130,7 @@ Pack.Health.Cards.push(new Card({
 Pack.Health.Cards.push(new Card({
     title: 'Здоров',
     icon: '💪',
-    text: 'Представь что этой карты нет'
+    text: 'Ты здоров, как Дуэйн'
 }));
 Pack.Health.Cards.push(new Card({
     title: 'Щупальца вместо рук',
@@ -145,7 +145,7 @@ Pack.Health.Cards.push(new Card({
 Pack.Health.Cards.push(new Card({
     title: 'Астма',
     icon: '👅',
-    text: 'Опять не могу найти свою пшикалку'
+    text: 'Опять не могу найти свой ингалятор'
 }));
 Pack.Health.Cards.push(new Card({
     title: 'Нет ноги',
@@ -378,7 +378,7 @@ Pack.Profession.Cards.push(new Card({
 Pack.Profession.Cards.push(new Card({
     title: 'Фотограф',
     icon: '📸',
-    text: ''
+    text: 'Скажи сыыыыр'
 }));
 Pack.Profession.Cards.push(new Card({
     title: 'Полицейский',
@@ -388,7 +388,7 @@ Pack.Profession.Cards.push(new Card({
 Pack.Profession.Cards.push(new Card({
     title: 'Пожарный',
     icon: '🧑‍🚒',
-    text: ''
+    text: 'Спички детям не игрушка'
 }));
 Pack.Profession.Cards.push(new Card({
     title: 'Акушер',
@@ -398,7 +398,7 @@ Pack.Profession.Cards.push(new Card({
 Pack.Profession.Cards.push(new Card({
     title: 'Переводчик',
     icon: '👨‍💼',
-    text: ''
+    text: 'Нуу, этот язык на не преподавали'
 }));
 Pack.Profession.Cards.push(new Card({
     title: 'Швея',
