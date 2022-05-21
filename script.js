@@ -768,6 +768,71 @@ Pack.Bagage.Cards.push(new Card({
     icon: '☕️',
     text: 'Я их всех переживу'
 }));
+Pack.Bagage.Cards.push(new Card({
+    title: 'Скафандр',
+    icon: '🧑‍🚀',
+    text: ''
+}));
+Pack.Bagage.Cards.push(new Card({
+    title: 'Противогаз',
+    icon: '🤿',
+    text: ''
+}));
+Pack.Bagage.Cards.push(new Card({
+    title: 'Палатка',
+    icon: '⛺️',
+    text: ''
+}));
+Pack.Bagage.Cards.push(new Card({
+    title: 'Годовой запас сухпайка',
+    icon: '🥫',
+    text: 'Ребята, меня впустили, заносите!'
+}));
+Pack.Bagage.Cards.push(new Card({
+    title: 'Очиститель воды',
+    icon: '🥂',
+    text: 'Райское наслаждение'
+}));
+Pack.Bagage.Cards.push(new Card({
+    title: 'Мышьяк',
+    icon: '☠️',
+    text: 'Наполеону не давать'
+}));
+Pack.Bagage.Cards.push(new Card({
+    title: 'Грелка',
+    icon: '♨️',
+    text: ''
+}));
+Pack.Bagage.Cards.push(new Card({
+    title: 'Виагра',
+    icon: '🌶',
+    text: 'А зачем она тебе?'
+}));
+Pack.Bagage.Cards.push(new Card({
+    title: 'Рация',
+    icon: '📞',
+    text: ''
+}));
+Pack.Bagage.Cards.push(new Card({
+    title: 'Кислородный баллон',
+    icon: '⚗️',
+    text: ''
+}));
+Pack.Bagage.Cards.push(new Card({
+    title: 'Генератор энергии',
+    icon: '📩',
+    text: ''
+}));
+Pack.Bagage.Cards.push(new Card({
+    title: 'Инкубатор с яйцами',
+    icon: '🥚',
+    text: ''
+}));
+Pack.Bagage.Cards.push(new Card({
+    title: 'Сигнальная ракетница',
+    icon: '🔫',
+    text: ''
+}));
 
 document.write('<hr>');
 document.write('<p>||| Терминал событий бункера<p>');
