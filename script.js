@@ -105,6 +105,16 @@ Pack.Biology.Cards.push(new Card({
     icon: '💋',
     text: 'Девушка гей 20 лет'
 }));
+Pack.Biology.Cards.push(new Card({
+    title: 'Ребёнок',
+    icon: '👼',
+    text: 'Кроха, где твои родители?'
+}));
+Pack.Biology.Cards.push(new Card({
+    title: 'Метаморф',
+    icon: '🧞‍♂️',
+    text: 'Можешь принять любой облик'
+}));
 //Здоровье
 Pack.Health = new Deck('Health');
 Pack.Health.Cards.push(new Card({
@@ -151,6 +161,122 @@ Pack.Health.Cards.push(new Card({
     title: 'Последняя стадия рака',
     icon: '☠️',
     text: 'Последнее желание будет?'
+}));
+Pack.Health.Cards.push(new Card({
+    title: 'Забывчивость',
+    icon: '❔',
+    text: 'А о чём шла речь вообще?'
+}));
+Pack.Health.Cards.push(new Card({
+    title: 'Шизофрения',
+    icon: '🗯',
+    text: 'Ребята, я видел, что к нам в бункер зашёл чёрный кот!'
+}));
+Pack.Health.Cards.push(new Card({
+    title: 'Бесплодие',
+    icon: '❌',
+    text: 'Нет, я чайлдфри'
+}));
+Pack.Health.Cards.push(new Card({
+    title: 'Гемофилия',
+    icon: '🩸',
+    text: 'Я представляю что это кетчуп'
+}));
+Pack.Health.Cards.push(new Card({
+    title: 'Биполярное расстройство',
+    icon: '👥',
+    text: 'Ты меня с кем-то путаешь...'
+}));
+Pack.Health.Cards.push(new Card({
+    title: 'Раздвоение личности',
+    icon: '🫂',
+    text: 'Ты меня точно с кем-то путаешь...'
+}));
+Pack.Health.Cards.push(new Card({
+    title: 'Депрессия',
+    icon: '🪴',
+    text: 'Мы отсюда никогда не выберемся'
+}));
+Pack.Health.Cards.push(new Card({
+    title: 'Даун',
+    icon: '🙇',
+    text: ''
+}));
+Pack.Health.Cards.push(new Card({
+    title: 'Паралич',
+    icon: '⚡️',
+    text: ''
+}));
+Pack.Health.Cards.push(new Card({
+    title: 'Аллергик',
+    icon: '⛈',
+    text: 'У кого есть таблетки от аллергии?'
+}));
+Pack.Health.Cards.push(new Card({
+    title: 'Бессонница',
+    icon: '💥',
+    text: 'Какой сейчас день?'
+}));
+Pack.Health.Cards.push(new Card({
+    title: 'Нарколепсия',
+    icon: '💤',
+    text: 'Сейчас, ещё чуть-чуть'
+}));
+Pack.Health.Cards.push(new Card({
+    title: 'Кожа бабочки',
+    icon: '♨️',
+    text: 'До меня лучше не докасаться'
+}));
+Pack.Health.Cards.push(new Card({
+    title: 'Общая алопеция',
+    icon: '🚫',
+    text: 'У меня гладкая кожа ВЕЗДЕ'
+}));
+Pack.Health.Cards.push(new Card({
+    title: 'Ожирение',
+    icon: '💯',
+    text: 'Это не проблема'
+}));
+Pack.Health.Cards.push(new Card({
+    title: 'Дистрофия',
+    icon: '❌',
+    text: 'Что такое еда?'
+}));
+Pack.Health.Cards.push(new Card({
+    title: 'Булимия',
+    icon: '📛',
+    text: 'У меня есть три часа'
+}));
+
+Pack.Health.Cards.push(new Card({
+    title: 'Какается',
+    icon: '💩',
+    text: 'Потом объясню'
+}));
+Pack.Health.Cards.push(new Card({
+    title: 'Горбатый',
+    icon: '🤠',
+    text: 'Видели мультик "Карлик нос"?'
+}));
+Pack.Health.Cards.push(new Card({
+    title: 'Сильный иммунитет',
+    icon: '💪',
+    text: 'В детстве я стоооолько болел'
+}));
+Pack.Health.Cards.push(new Card({
+    title: 'Сильный кишечник',
+    icon: '🍽',
+    text: 'Мои родители не понимают, как я ем эту дрянь'
+}));
+Pack.Health.Cards.push(new Card({
+    title: 'Видит в темноте',
+    icon: '🐈‍⬛',
+    text: 'Походка кошки, нос картошкой'
+}));
+Pack.Health.Cards.push(new Card({
+    title: 'Импотент',
+    icon: '💔',
+    text: 'Я тоже чайлдфри'
 }));
 //Профессия
 Pack.Profession = new Deck('Profession');
@@ -223,6 +349,61 @@ Pack.Profession.Cards.push(new Card({
     title: 'Архитектор',
     icon: '🏆',
     text: 'Себе я памятник воздвиг'
+}));
+Pack.Profession.Cards.push(new Card({
+    title: 'Патолаганатом',
+    icon: '👨‍⚕️',
+    text: 'У каждого свои скелеты'
+}));
+Pack.Profession.Cards.push(new Card({
+    title: 'Психолог',
+    icon: '👨‍⚕️',
+    text: 'Это всё из дества'
+}));
+Pack.Profession.Cards.push(new Card({
+    title: 'Садовник',
+    icon: '🧑‍🌾',
+    text: 'Выйграем на конкурсе кабачков'
+}));
+Pack.Profession.Cards.push(new Card({
+    title: 'Археолог',
+    icon: '👷',
+    text: ''
+}));
+Pack.Profession.Cards.push(new Card({
+    title: 'Библиотекарь',
+    icon: '🧑‍💼',
+    text: 'Я видел тысячи миров...'
+}));
+Pack.Profession.Cards.push(new Card({
+    title: 'Фотограф',
+    icon: '📸',
+    text: ''
+}));
+Pack.Profession.Cards.push(new Card({
+    title: 'Полицейский',
+    icon: '👮',
+    text: 'Руки за голову'
+}));
+Pack.Profession.Cards.push(new Card({
+    title: 'Пожарный',
+    icon: '🧑‍🚒',
+    text: ''
+}));
+Pack.Profession.Cards.push(new Card({
+    title: 'Акушер',
+    icon: '🧑‍⚕️',
+    text: 'Головка виднеется'
+}));
+Pack.Profession.Cards.push(new Card({
+    title: 'Переводчик',
+    icon: '👨‍💼',
+    text: ''
+}));
+Pack.Profession.Cards.push(new Card({
+    title: 'Швея',
+    icon: '🧑‍🎤',
+    text: 'Раз стежок, два стежок'
 }));
 //Факты
 Pack.Facts = new Deck('Facts');
@@ -409,6 +590,11 @@ Pack.Conditions.Cards.push(new Card({
     title: 'Гомофобия',
     icon: '💢',
     text: 'Ты должен голосовать против игроков с нетрадиционной ориентацией'
+}));
+Pack.Conditions.Cards.push(new Card({
+    title: 'Геронтофобия',
+    icon: '💢',
+    text: 'Ты должен голосовать против игроков, которые старше тебя'
 }));
 //Багаж
 Pack.Bagage = new Deck('Bagage');
