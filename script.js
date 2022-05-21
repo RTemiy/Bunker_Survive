@@ -200,12 +200,12 @@ Pack.Health.Cards.push(new Card({
 Pack.Health.Cards.push(new Card({
     title: 'Даун',
     icon: '🙇',
-    text: ''
+    text: 'Хочу быть красоткой'
 }));
 Pack.Health.Cards.push(new Card({
     title: 'Паралич',
     icon: '⚡️',
-    text: ''
+    text: 'Зато мысли гоняют быстро'
 }));
 Pack.Health.Cards.push(new Card({
     title: 'Аллергик',
@@ -215,7 +215,7 @@ Pack.Health.Cards.push(new Card({
 Pack.Health.Cards.push(new Card({
     title: 'Бессонница',
     icon: '💥',
-    text: 'Какой сейчас день?'
+    text: 'Я насчитал уже 100000000 барашкев'
 }));
 Pack.Health.Cards.push(new Card({
     title: 'Нарколепсия',
@@ -467,6 +467,61 @@ Pack.Facts.Cards.push(new Card({
     icon: '📺',
     text: 'Иногда пульт не хотел чтобы я им пользовался'
 }));
+Pack.Facts.Cards.push(new Card({
+    title: 'Клептоман',
+    icon: '🤏',
+    text: 'Администрация не несёт ответственности за оставленные вещи'
+}));
+Pack.Facts.Cards.push(new Card({
+    title: 'Зарабатывал проституцией',
+    icon: '💋',
+    text: 'Ева я любила тебя'
+}));
+Pack.Facts.Cards.push(new Card({
+    title: 'Не может дышать во сне',
+    icon: '🫁',
+    text: ''
+}));
+Pack.Facts.Cards.push(new Card({
+    title: 'Избежал смертной казни',
+    icon: '🪓',
+    text: 'После этого я поверил в бога'
+}));
+Pack.Facts.Cards.push(new Card({
+    title: 'Пережил пожар',
+    icon: '🔥',
+    text: 'Теперь я боюсь воды'
+}));
+Pack.Facts.Cards.push(new Card({
+    title: 'Дислексия',
+    icon: '💱',
+    text: 'Я не ленивый, я правда не умею читать'
+}));
+Pack.Facts.Cards.push(new Card({
+    title: 'Пережил 10 ударов молнией',
+    icon: '💓',
+    text: 'Однажды молния попала в меня, когда я ехал на машине'
+}));
+Pack.Facts.Cards.push(new Card({
+    title: 'Понимает животных',
+    icon: '🐿',
+    text: 'Кто сказал мяу?'
+}));
+Pack.Facts.Cards.push(new Card({
+    title: 'Пробежал марафон',
+    icon: '🏃',
+    text: 'И это только начало'
+}));
+Pack.Facts.Cards.push(new Card({
+    title: 'Жадина',
+    icon: '🤷',
+    text: 'Никому не отдам'
+}));
+Pack.Facts.Cards.push(new Card({
+    title: 'Задерживает дыхание на 10 минут',
+    icon: '🫁',
+    text: 'Правда с рыбами не умею общаться'
+}));
 //Хобби
 Pack.Hobby = new Deck('Hobby');
 Pack.Hobby.Cards.push(new Card({
@@ -528,6 +583,46 @@ Pack.Hobby.Cards.push(new Card({
     title: 'Фильмы про зомби',
     icon: '🎥',
     text: 'Один выстрел в голову и труп станет трупом'
+}));
+Pack.Hobby.Cards.push(new Card({
+    title: 'Вязание',
+    icon: '🧶',
+    text: 'Вяжут не только бабушки'
+}));
+Pack.Hobby.Cards.push(new Card({
+    title: 'Настольные игры',
+    icon: '🧩',
+    text: 'А во что мы играем'
+}));
+Pack.Hobby.Cards.push(new Card({
+    title: 'Коктейли',
+    icon: '🍸',
+    text: 'Со мной не соскучишься'
+}));
+Pack.Hobby.Cards.push(new Card({
+    title: 'Разводил животных',
+    icon: '🐕🐈‍⬛🐀🐿',
+    text: 'Не на деньги'
+}));
+Pack.Hobby.Cards.push(new Card({
+    title: 'Художник',
+    icon: '🧑‍🎨',
+    text: 'Я так вижу'
+}));
+Pack.Hobby.Cards.push(new Card({
+    title: 'Мошенник',
+    icon: '🥷',
+    text: 'Я им сказал, что я не мошенник, они поверили...'
+}));
+Pack.Hobby.Cards.push(new Card({
+    title: 'Парикмахер',
+    icon: '🧑‍🎤',
+    text: 'Вам только кончики подстричь'
+}));
+Pack.Hobby.Cards.push(new Card({
+    title: 'КМС по боксу',
+    icon: '🥊',
+    text: 'Тыщ-тыщ'
 }));
 //Особые условия
 Pack.Conditions = new Deck('Conditions');
