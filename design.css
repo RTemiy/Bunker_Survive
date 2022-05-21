@@ -91,6 +91,15 @@ hr {
     width: calc(var(--cw)/1.1);
 }
 
+.tip {
+    font-size: smaller;
+    font-style: oblique;
+    top: calc(var(--ch)/1.15);
+    position: fixed;
+    height: calc(var(--ch)/1.8);
+    width: calc(var(--cw)/1.1);
+}
+
 .icon {
     text-shadow: 0px 0px 0px rgba(0, 134, 7, 0.589);
     position: absolute;

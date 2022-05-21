@@ -8,8 +8,8 @@ class Card {
 }
 
 class Deck {
-    constructor(id) {
-        this.id = id;
+    constructor(category) {
+        this.category = category;
         this.Cards = [];
         this.element = document.createElement('div');
         this.element.setAttribute('class', 'deckback');
@@ -28,9 +28,13 @@ class Deck {
         this.icon.setAttribute('class', 'icon');
         this.text = document.createElement('p');
         this.text.setAttribute('class', 'text');
+        this.tip = document.createElement('p');
+        this.tip.setAttribute('class', 'tip');
         this.element.appendChild(this.title);
         this.element.appendChild(this.icon);
         this.element.appendChild(this.text);
+        this.element.appendChild(this.tip);
+        this.tip.innerHTML=this.category;
         document.body.appendChild(this.element);
         this.SetRnd = () => {
             let r = Math.floor(Math.random() * this.Cards.length);
@@ -54,7 +58,7 @@ class Deck {
 
 var Pack = {};
 //Биология
-Pack.Biology = new Deck('Biology');
+Pack.Biology = new Deck('Биология');
 Pack.Biology.Cards.push(new Card({
     title: 'Мужчина',
     icon: '👨🏻',
@@ -116,7 +120,7 @@ Pack.Biology.Cards.push(new Card({
     text: 'Можешь принять любой облик'
 }));
 //Здоровье
-Pack.Health = new Deck('Health');
+Pack.Health = new Deck('Здоровье');
 Pack.Health.Cards.push(new Card({
     title: 'Слепой',
     icon: '🧑‍🦯',
@@ -279,7 +283,7 @@ Pack.Health.Cards.push(new Card({
     text: 'Я тоже чайлдфри'
 }));
 //Профессия
-Pack.Profession = new Deck('Profession');
+Pack.Profession = new Deck('Профессия');
 Pack.Profession.Cards.push(new Card({
     title: 'Шахтер',
     icon: '⛏',
@@ -426,7 +430,7 @@ Pack.Profession.Cards.push(new Card({
     text: 'Сварю (не суп)'
 }));
 //Факты
-Pack.Facts = new Deck('Facts');
+Pack.Facts = new Deck('Факт');
 Pack.Facts.Cards.push(new Card({
     title: 'Знает президента',
     icon: '🗣',
@@ -543,7 +547,7 @@ Pack.Facts.Cards.push(new Card({
     text: 'Правда с рыбами не умею общаться'
 }));
 //Хобби
-Pack.Hobby = new Deck('Hobby');
+Pack.Hobby = new Deck('Хобби');
 Pack.Hobby.Cards.push(new Card({
     title: 'Мыловарение',
     icon: '💫',
@@ -665,7 +669,7 @@ Pack.Hobby.Cards.push(new Card({
     text: 'Бэар Гриллс— фейк'
 }));
 //Особые условия
-Pack.Conditions = new Deck('Conditions');
+Pack.Conditions = new Deck('Особое условие');
 Pack.Conditions.Cards.push(new Card({
     title: 'Один за всех и все против одного',
     icon: '⭐️',
@@ -732,7 +736,7 @@ Pack.Conditions.Cards.push(new Card({
     text: 'Ты должен голосовать против игроков, которые старше тебя'
 }));
 //Багаж
-Pack.Bagage = new Deck('Bagage');
+Pack.Bagage = new Deck('Багаж');
 Pack.Bagage.Cards.push(new Card({
     title: 'Снайперская винтовка',
     icon: '🏹',
@@ -879,7 +883,7 @@ document.write('<p>||| Терминал событий бункера<p>');
 document.write('<hr>');
 
 //Бункер
-Pack.Bunker = new Deck('Bunker');
+Pack.Bunker = new Deck('Бункер');
 Pack.Bunker.Cards.push(new Card({
     title: 'Хим Лаборатория',
     icon: '🧪',
@@ -966,7 +970,7 @@ Pack.Bunker.Cards.push(new Card({
     text: 'В нужных руках она станет нашим лучшим выходом из этой ситуации'
 }));
 //Катаклизм
-Pack.Cataclysm = new Deck('Cataclysm');
+Pack.Cataclysm = new Deck('Катастрофа');
 Pack.Cataclysm.Cards.push(new Card({
     title: 'Атомная зима',
     icon: '💣',
@@ -1033,7 +1037,7 @@ Pack.Cataclysm.Cards.push(new Card({
     text: 'Последнее десятилетие учёные всех стран упорно экспериментировали над генами животных, что к привело к их утечке, в мире стали появляться огромные виды животных, которые уничтожали всё на своём пути.Выжившим нужно приспособиться к новым условиям и восстановить цивилизацию!'
 }));
 //Угроза
-Pack.Threat = new Deck('Threat');
+Pack.Threat = new Deck('Угроза');
 Pack.Threat.Cards.push(new Card({
     title: 'Крысы',
     icon: '🐀',
@@ -1116,12 +1120,16 @@ function ShowAll(){
         this.icon.setAttribute('class', 'icon');
         this.text = document.createElement('p');
         this.text.setAttribute('class', 'text');
+        this.tip = document.createElement('p');
+        this.tip.setAttribute('class', 'tip');
         this.title.innerHTML=Pack[key].Cards[x].title;
         this.icon.innerHTML=Pack[key].Cards[x].icon;
-        this.text.innerHTML=Pack[key].Cards[x].text;
+        this.text.innerHTML=Pack[key].Cards[x].text;        
+        this.tip.innerHTML=Pack[key].category;        
         this.element.appendChild(this.title);
         this.element.appendChild(this.icon);
         this.element.appendChild(this.text);
+        this.element.appendChild(this.tip);
         document.body.appendChild(this.element);
         }
     }
