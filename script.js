@@ -127,11 +127,6 @@ Pack.Biology.Cards.push(new Card({
     text: 'Девушка гей 20 лет'
 }));
 Pack.Biology.Cards.push(new Card({
-    title: 'Ребёнок',
-    icon: '👼',
-    text: 'Кроха, где твои родители?'
-}));
-Pack.Biology.Cards.push(new Card({
     title: 'Метаморф',
     icon: '🧞‍♂️',
     text: 'Можешь принять любой облик'

@@ -1,7 +1,7 @@
 :root {
     --cw: 120px;
     --ch: 180px;
-    --itc: rgb(92, 255, 92);
+    --itc: rgb(0, 255, 0);
 }
 
 * {
@@ -102,7 +102,7 @@ hr {
 
 .icon {
     text-shadow: 0px 0px 0px rgba(0, 134, 7, 0.589);
-    position: absolute;
+    position: relative;
     left: calc(var(--cw)/3.5);
     top: calc(var(--ch)/2);
     font-size: 300%;
